@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2><i class="fab fa-spotify"></i> Spotify</h2>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <span>Buscar</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-list"></i>
+                        <span>Tu biblioteca</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="library-section">
+                <div class="library-header">
+                    <h3>Playlists creadas</h3>
+                    <button class="create-playlist">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <ul class="playlist-list">
+                    <li>Me Gusta</li>
+                    <li>Mis favoritas</li>
+                    <li>Descubrimiento semanal</li>
+                    <li>Rock Clásico</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="navigation-buttons">
+                    <button class="nav-btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn" id="forward-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="user-menu">
+                    <button class="user-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Elvin</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <section class="welcome-section">
+                    <h1>¡Buenas!</h1>
+                    <p>Bienvenido de vuelta a tu música</p>
+                </section>
+
+                <section class="playlist-section">
+                    <h2>Escuchado recientemente</h2>
+                    <div class="recent-grid">
+                        <div class="recent-item">
+                            <img src="https://images.genius.com/6776b2328c90c22048808547109a1dde.1000x1000x1.png" alt="11xpantia">
+                            <span>11xpantia</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273f3ba6742a35f111aaea1ca2f" alt="sad boyz 4 life 2">
+                            <span>sad boyz 4 life 2</span>
+                        </div>
+                        <div class="recent-item">
+                            <img src="https://cdn-images.dzcdn.net/images/cover/0dc1610857f00628e14aafa693ec9216/1900x1900-000000-81-0-0.jpg" alt="Incomodo">
+                            <span>Incomodo</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="playlist-section">
+                    <div class="section-header">
+                        <h2>Tus álbumes</h2>
+                        <button class="show-all">Ver todo</button>
+                    </div>
+                    <div class="playlist-grid">
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://images.genius.com/6776b2328c90c22048808547109a1dde.1000x1000x1.png" alt="11xpantia">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>11xpantia</h3>
+                                <p class="subtitle">Álbum</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273f3ba6742a35f111aaea1ca2f" alt="sad boyz 4 life 2">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>sad boyz 4 life 2</h3>
+                                <p class="subtitle">Álbum</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://cdn-images.dzcdn.net/images/cover/0dc1610857f00628e14aafa693ec9216/1900x1900-000000-81-0-0.jpg" alt="Incomodo">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Incomodo</h3>
+                                <p class="subtitle">Álbum</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e020baa5a0b0f2185e0dea60e53ab67616d00001e0249d694203245f241a1bcaa72ab67616d00001e02ae5de4424991cff7d821b1a1ab67616d00001e02e406291f300356715631c48b" alt="Ejemplo 4">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Mix Relajante</h3>
+                                <p class="subtitle">Playlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="playlist-section">
+                    <div class="section-header">
+                        <h2>Hecho para ti</h2>
+                        <button class="show-all">Ver todo</button>
+                    </div>
+                    <div class="playlist-grid">
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://seed-mix-image.spotifycdn.com/v6/img/artist/4q3ewBCX7sLwd24euuV69X/es/default" alt="Mix diario">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Mix diario 1</h3>
+                                <p class="subtitle">Una mezcla personalizada para ti</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://i.scdn.co/image/ab6761610000e5ebc8f6d4d6eb8e7dd5206bd5f4" alt="Descubrimiento">
+                                <button class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Descubrimiento semanal</h3>
+                                <p class="subtitle">Tu mixtape semanal de nuevos descubrimientos</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="music-player">
+        <div class="player-left">
+            <img src="https://images.genius.com/6776b2328c90c22048808547109a1dde.1000x1000x1.png" alt="Current song" class="current-song-image">
+            <div class="current-song-info">
+                <span class="song-title">ANSIEDAD</span>
+                <span class="artist-name">Fuerza Regida</span>
+            </div>
+            <button class="like-btn">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <button><i class="fas fa-random"></i></button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-bar">
+                <span class="time current-time">0:00</span>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="time total-time">3:45</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <button><i class="fas fa-list"></i></button>
+            <button><i class="fas fa-desktop"></i></button>
+            <div class="volume-control">
+                <button><i class="fas fa-volume-up"></i></button>
+                <div class="volume-bar">
+                    <div class="volume-fill"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.play-pause-btn').addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-play')) {
+                icon.classList.remove('fa-play');
+                icon.classList.add('fa-pause');
+            } else {
+                icon.classList.remove('fa-pause');
+                icon.classList.add('fa-play');
+            }
+        });
+
+        document.querySelector('.like-btn').addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('far')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                icon.style.color = '#1db954';
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                icon.style.color = '';
+            }
+        });
+
+        document.querySelectorAll('.main-nav li, .playlist-list li').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.main-nav li').forEach(li => li.classList.remove('active'));
+                if (this.parentElement.classList.contains('main-nav')) {
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
